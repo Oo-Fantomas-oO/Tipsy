@@ -59,12 +59,20 @@
 				84DCADD425D3DD870006215D /* AppDelegate.swift */,
 				84DCADD625D3DD870006215D /* SceneDelegate.swift */,
 				84DCADD825D3DD870006215D /* ViewController.swift */,
-				84DCADDA25D3DD870006215D /* Main.storyboard */,
+				84DCADE925D3DE460006215D /* View */,
 				84DCADDD25D3DD880006215D /* Assets.xcassets */,
 				84DCADDF25D3DD880006215D /* LaunchScreen.storyboard */,
 				84DCADE225D3DD880006215D /* Info.plist */,
 			);
 			path = Tipsy;
+			sourceTree = "<group>";
+		};
+		84DCADE925D3DE460006215D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84DCADDA25D3DD870006215D /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
