@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8487E78F25D52A0B00F1187E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487E78E25D52A0B00F1187E /* ResultViewController.swift */; };
 		84DCADD525D3DD870006215D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCADD425D3DD870006215D /* AppDelegate.swift */; };
 		84DCADD725D3DD870006215D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCADD625D3DD870006215D /* SceneDelegate.swift */; };
-		84DCADD925D3DD870006215D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCADD825D3DD870006215D /* ViewController.swift */; };
+		84DCADD925D3DD870006215D /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCADD825D3DD870006215D /* CalculateViewController.swift */; };
 		84DCADDC25D3DD870006215D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DCADDA25D3DD870006215D /* Main.storyboard */; };
 		84DCADDE25D3DD880006215D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DCADDD25D3DD880006215D /* Assets.xcassets */; };
 		84DCADE125D3DD880006215D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DCADDF25D3DD880006215D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8487E78E25D52A0B00F1187E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		84DCADD125D3DD870006215D /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DCADD425D3DD870006215D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DCADD625D3DD870006215D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84DCADD825D3DD870006215D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84DCADD825D3DD870006215D /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		84DCADDB25D3DD870006215D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84DCADDD25D3DD880006215D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DCADE025D3DD880006215D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8487E78C25D5297A00F1187E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84DCADD825D3DD870006215D /* CalculateViewController.swift */,
+				8487E78E25D52A0B00F1187E /* ResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		84DCADC825D3DD870006215D = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +69,8 @@
 			children = (
 				84DCADD425D3DD870006215D /* AppDelegate.swift */,
 				84DCADD625D3DD870006215D /* SceneDelegate.swift */,
-				84DCADD825D3DD870006215D /* ViewController.swift */,
 				84DCADE925D3DE460006215D /* View */,
+				8487E78C25D5297A00F1187E /* Controllers */,
 				84DCADDD25D3DD880006215D /* Assets.xcassets */,
 				84DCADDF25D3DD880006215D /* LaunchScreen.storyboard */,
 				84DCADE225D3DD880006215D /* Info.plist */,
@@ -145,9 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DCADD925D3DD870006215D /* ViewController.swift in Sources */,
+				84DCADD925D3DD870006215D /* CalculateViewController.swift in Sources */,
 				84DCADD525D3DD870006215D /* AppDelegate.swift in Sources */,
 				84DCADD725D3DD870006215D /* SceneDelegate.swift in Sources */,
+				8487E78F25D52A0B00F1187E /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
