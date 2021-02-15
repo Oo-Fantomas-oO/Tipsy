@@ -82,6 +82,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="rAp-fq-5ei"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <color key="tintColor" systemColor="systemGreenColor"/>
                                                         <state key="normal" title="0%">
                                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                                         </state>
@@ -89,7 +90,7 @@
                                                             <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tTo-91-8Jx"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqz-uy-roe">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqz-uy-roe">
                                                         <rect key="frame" x="101" y="0.0" width="172" height="54"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                         <color key="tintColor" systemColor="systemGreenColor"/>
@@ -100,7 +101,7 @@
                                                             <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NoZ-84-VSI"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgw-aF-5g7">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgw-aF-5g7">
                                                         <rect key="frame" x="273" y="0.0" width="101" height="54"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                         <color key="tintColor" systemColor="systemGreenColor"/>
@@ -206,7 +207,6 @@
                         <outlet property="tenPctButton" destination="wqz-uy-roe" id="u8e-Xx-c97"/>
                         <outlet property="twentyPctButton" destination="Pgw-aF-5g7" id="s6H-yW-mzi"/>
                         <outlet property="zeroPctButton" destination="zy1-ID-Qb6" id="B5M-jW-Aes"/>
-                        <segue destination="pjw-dB-Drd" kind="presentation" identifier="goToResult" id="qxc-lv-Ucv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -216,9 +216,9 @@
         <!--Result View Controller-->
         <scene sceneID="zFJ-h7-CNb">
             <objects>
-                <viewController id="pjw-dB-Drd" customClass="ResultViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resultViewController" id="pjw-dB-Drd" customClass="ResultViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ekf-7H-lIA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6am-TA-UMp">
@@ -266,7 +266,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsE-LA-LyW">
-                                <rect key="frame" x="107" y="754" width="200" height="54"/>
+                                <rect key="frame" x="107" y="793" width="200" height="54"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="OEy-iG-4hF"/>
@@ -286,7 +286,7 @@
                             <constraint firstItem="LsE-LA-LyW" firstAttribute="centerX" secondItem="flI-ed-bcj" secondAttribute="centerX" id="2Of-re-z4p"/>
                             <constraint firstItem="flI-ed-bcj" firstAttribute="trailing" secondItem="YXf-rQ-JlY" secondAttribute="trailing" constant="50" id="8Cx-qU-zUp"/>
                             <constraint firstItem="6am-TA-UMp" firstAttribute="leading" secondItem="flI-ed-bcj" secondAttribute="leading" id="NpW-wC-bGf"/>
-                            <constraint firstItem="flI-ed-bcj" firstAttribute="bottom" secondItem="LsE-LA-LyW" secondAttribute="bottom" id="Oed-1d-kUg"/>
+                            <constraint firstItem="flI-ed-bcj" firstAttribute="bottom" secondItem="LsE-LA-LyW" secondAttribute="bottom" constant="15" id="Oed-1d-kUg"/>
                             <constraint firstItem="YXf-rQ-JlY" firstAttribute="leading" secondItem="flI-ed-bcj" secondAttribute="leading" constant="50" id="S0D-V9-p58"/>
                             <constraint firstItem="YXf-rQ-JlY" firstAttribute="top" secondItem="6am-TA-UMp" secondAttribute="bottom" constant="5" id="SpV-ot-aua"/>
                             <constraint firstItem="6am-TA-UMp" firstAttribute="top" secondItem="Ekf-7H-lIA" secondAttribute="top" id="kNz-sA-KGI"/>
